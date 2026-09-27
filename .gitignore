@@ -1,0 +1,25 @@
+# dependencies
+node_modules/
+
+# environment / secrets
+.env
+.env.local
+
+# database files
+data/
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# uploaded media (keep the folder, ignore the content)
+uploads/*
+!uploads/.gitkeep
+
+# logs & editor noise
+logs/
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode/settings.json

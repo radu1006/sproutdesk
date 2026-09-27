@@ -1,0 +1,42 @@
+SproutDesk — NOTICE
+===================
+
+Copyright (c) 2026 SproutDesk. Licensed under the MIT License (see LICENSE).
+
+Original work
+-------------
+
+Every file in this repository — the Express server, the SQL layer, the SQLite
+and PostgreSQL schemas, the seed data, the hand-written CSS and the browser
+ES modules under public/ — was written for this project. No third-party
+application code, template, theme, stylesheet, icon set, font or image was
+copied in, and no commercial childcare product's name, branding or copy appears
+in the source.
+
+Runtime dependencies
+--------------------
+
+SproutDesk uses only published npm packages. They are installed by
+`npm install` and are not vendored in this repository; each one keeps its own
+licence and copyright notice (see the LICENSE file inside its folder under
+node_modules/).
+
+| Package | Purpose | Licence |
+| --- | --- | --- |
+| express | HTTP server and routing | MIT |
+| better-sqlite3 | SQLite driver (default engine) | MIT |
+| pg | PostgreSQL driver (optional engine) | MIT |
+| bcryptjs | password hashing | MIT |
+| multer | multipart image uploads | MIT |
+| dotenv | .env loading | BSD-2-Clause |
+
+The browser side deliberately has no dependencies: the frontend is plain ES
+modules plus one stylesheet, so nothing is bundled or transpiled.
+
+Data
+----
+
+`npm run seed` inserts a fictional demo centre (children, guardians, staff,
+invoices). Those names, addresses, phone numbers and notes are invented
+placeholders for development, not real people. Replace or delete them before
+using the application with real families.
